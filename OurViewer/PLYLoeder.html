@@ -16,41 +16,64 @@
 </head>
 
 <body>
-  <!-- All controles methodes -->
-  <aside id="viewer-hint" role="dialog" aria-label="Viewer controls hint" aria-modal="false">
-    <h4>Controls — Quick Hint</h4>
-
-    <strong>Mouse</strong>
+  <div class="nav">
+    <h1>PLY Viewer</h1>
     <ul>
-      <li><strong>Rotate:</strong> Left mouse drag</li>
-      <li><strong>Zoom:</strong> Mouse wheel</li>
-      <li><strong>Pan:</strong> Right mouse drag</li>
+      <li>
+        <a href="../index.html">
+          <button>Home</button>
+        </a>
+      </li>
+      <li>
+        <a href="../SketchfabViewer/PLYWithSketchfab/PLYWithSketchfab.html">
+          <button>Sketchfab Viewer</button>
+        </a>
+      </li>
+      <li>
+        <a href="../SketchfabViewer/UploadeToSketchfad/UploadeToSketchfad.html">
+          <button>Upload to Sketchfab</button>
+        </a>
+      </li>
     </ul>
+  </div>
+  <div id="container" class="container">
 
-    <strong>Transform (Gizmo)</strong>
-    <ul>
-      <li>Click object to activate gizmo</li>
-      <li><strong>T</strong> = Translate, <strong>R</strong> = Rotate, <strong>S</strong> = Scale</li>
-      <li><strong>Esc</strong> = Detach gizmo</li>
-    </ul>
+    <!-- All controles methodes -->
+    <aside id="viewer-hint" role="dialog" aria-label="Viewer controls hint" aria-modal="false">
+      <h4>Controls — Quick Hint</h4>
 
-    <strong>Labels & Selection</strong>
-    <ul>
-      <li><strong>Ctrl + Click:</strong> add label at face centroid</li>
-      <li><strong>Alt + Click:</strong> add label at nearest vertex</li>
-      <li>Double-click object → fit camera to it</li>
-      <li>Double-click label → change label text</li>
-    </ul>
+      <strong>Mouse</strong>
+      <ul>
+        <li><strong>Rotate:</strong> Left mouse drag</li>
+        <li><strong>Zoom:</strong> Mouse wheel</li>
+        <li><strong>Pan:</strong> Right mouse drag</li>
+      </ul>
 
-    <div class="hint-actions">
-      <button id="hint-close" class="btn secondary" title="Close this hint">Close</button>
-      <button id="hint-hide" class="btn" title="Don't show again">Don't show again</button>
-    </div>
-  </aside>
+      <strong>Transform (Gizmo)</strong>
+      <ul>
+        <li>Click object to activate gizmo</li>
+        <li><strong>T</strong> = Translate, <strong>R</strong> = Rotate, <strong>S</strong> = Scale</li>
+        <li><strong>Esc</strong> = Detach gizmo</li>
+      </ul>
 
-  <button id="hint-toggle" aria-label="Show controls hint">Show controls</button>
+      <strong>Labels & Selection</strong>
+      <ul>
+        <li><strong>Ctrl + Click:</strong> add label at face centroid</li>
+        <li><strong>Alt + Click:</strong> add label at nearest vertex</li>
+        <li>Double-click object → fit camera to it</li>
+        <li>Double-click label → change label text</li>
+      </ul>
 
-  <script type="module" src="./script.js"></script>
+      <div class="hint-actions">
+        <button id="hint-close" class="btn secondary" title="Close this hint">Close</button>
+        <button id="hint-hide" class="btn" title="Don't show again">Don't show again</button>
+      </div>
+    </aside>
+
+    <button id="hint-toggle" aria-label="Show controls hint">Show controls</button>
+
+    <script type="module" src="./script.js"></script>
+  </div>
 </body>
 
 </html>

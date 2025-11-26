@@ -24,7 +24,7 @@ const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.shadowMap.enabled = true
-document.body.appendChild(renderer.domElement);
+document.getElementById("container").appendChild(renderer.domElement);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
@@ -71,8 +71,7 @@ labelRenderer.setSize(window.innerWidth, window.innerHeight);
 labelRenderer.domElement.style.position = 'absolute';
 labelRenderer.domElement.style.top = '0';
 labelRenderer.domElement.style.pointerEvents = 'none'; // allow clicks to pass through except label elements
-labelRenderer.domElement.style.zIndex = '20';
-document.body.appendChild(labelRenderer.domElement);
+document.getElementById("container").appendChild(labelRenderer.domElement);
 
 // label storage
 const labels = [];

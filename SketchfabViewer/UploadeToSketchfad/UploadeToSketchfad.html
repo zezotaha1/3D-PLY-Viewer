@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload PLY to Sketchfab</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+</head>
+
+<body style="font-family: Arial; padding: 20px;">
+  <div class="nav">
+    <h1>Upload PLY File to Sketchfab</h1>
+    <ul>
+      <li>
+        <a href="../../index.html">
+          <button>Home</button>
+        </a>
+      </li>
+      <li>
+        <a href="../../OurViewer/PLYLoeder.html">
+          <button>Our Viewer</button>
+        </a>
+      </li>
+      <li>
+        <a href="../PLYWithSketchfab/PLYWithSketchfab.html">
+          <button>Sketchfab Viewer</button>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+
+    <label>Your Sketchfab API Token:</label><br>
+    <input type="text" id="apiToken" placeholder="Enter API token" style="width: 300px; padding: 8px;" />
+
+    <br><br>
+
+    <label>Select PLY file:</label><br>
+    <input type="file" id="plyFile" accept=".ply" />
+
+    <br><br>
+
+    <button onclick="uploadToSketchfab()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">Upload</button>
+  </div>
+</body>
+
+</html>
